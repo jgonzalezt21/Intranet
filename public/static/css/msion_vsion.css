@@ -1,0 +1,46 @@
+@import url('fonts.css');
+
+.sec1 {
+    position: relative;
+    height: calc(100vh - 12em);
+    background: #fff;
+}
+
+#sec1_mapa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 75%;
+    padding-top: 2em;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sec2 {
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    padding: 6em 10em;
+    text-align: center;
+}
+
+#sec2_logo {
+    height: 22%;
+}
+
+.sec2 h2 {
+    margin: 2.3em 0 1em 0;
+    padding: .1em;
+    font-family: Futura, serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--color-primary-blue);
+}
+
+.sec2 p {
+    font-size: 1.5em;
+    font-family: MyriadPro, serif, Verdana;
+    font-weight: 400;
+}

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('static/css/msion_vsion.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <section class="sec1">
+                <img src="{{ asset('static/image/mapa_hlg.png') }}" id="sec1_mapa" alt="mapa">
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="sec2">
+                <img src="{{ asset('static/image/oneilogo_blanco.jpg') }}" id="sec2_logo" alt="logo">
+
+                <h2 id="mision">Misión</h2>
+                <p>La Oficina Provincial de Estadística e Información en Holguín es la entidad que tiene como misión
+                    exigir la aplicación de la política estatal en materia de estadística e información, y gestionar la
+                    información de interés nacional y la estadística oficial de la provincia, para el Gobierno central y
+                    provincial.</p>
+
+                <h2 id="vision">Visión</h2>
+                <p>Somos una Oficina con avances significativos en estándares metodológicos, tecnológicos, de
+                    competencias en sus recursos humanos para la producción y difusión de las estadísticas oficiales,
+                    que satisface las necesidades del Sistema de Información del Gobierno, de la sociedad y el
+                    ciudadano, para contribuir eficazmente al diseño de las políticas públicas y su evolución en el
+                    desarrollo del país. </p>
+            </section>
+        </div>
+    </div>
+{% endblock %}

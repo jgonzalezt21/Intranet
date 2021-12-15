@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="icon" type="image/x-icon" href="{{ asset('static/image/favicon.png') }}"/>
-        <title>{% block title %}{{ controller_name|default('Home') }}{% endblock %} | Intranet</title>
-        
-        <!-- Bootstrap CSS -->
-        <link href="{{ asset('static/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('static/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('static/css/style.css') }}" rel="stylesheet"/>
-        {% block stylesheets %}{% endblock %}
-  </head>
-  <body>
-    {# Navbar #}
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-6">
-                    <img class="img_logo" src="{{ asset('static/image/oneilogo.png') }}" alt="logo_onei">
-                </div>
-                
-                <div class="col-6">
-                    <ul class="list-inline logos text-end">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/ONEIHolguin"><img src="{{ asset('static/image/icon_facebook.png') }}" alt="icon_facebook"> ONEIHolguin</a>
-                        </li>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                        <li class="list-inline-item">
-                            <a href="#"><img src="{{ asset('static/image/icon_twitter.png') }}" alt="icon_twitter"> Twitter</a>
-                        </li>
+    <link rel="icon" type="image/x-icon" href="{{ asset('static/image/favicon.png') }}"/>
+    <title>{% block title %}{{ controller_name|default('Home') }}{% endblock %} | Intranet</title>
 
-                        <li class="list-inline-item">
-                            <a href="#"><img src="{{ asset('static/image/icon_youtube.png') }}" alt="icon_youtube"> Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Bootstrap CSS -->
+    <link href="{{ asset('static/css/style.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('static/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('static/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{# Navbar #}
+<div class="container">
+    <div class="row">
+        <section class="header">
+            <img class="img_logo" src="{{ asset('static/image/oneilogo_blanco.jpg') }}" alt="logo_onei">
 
-        {{ include('menu.html.twig') }}
-    {# Navbar END #}
+            <ul class="list-inline logos">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/ONEIHolguin" target="_blank"><img
+                                src="{{ asset('static/image/icon_facebook.png') }}" alt="icon_facebook"> ONEIHolguin</a>
+                </li>
 
-    <div class="zipper">
-        <img src="{{ asset('static/image/zipper90.png') }}" alt="zipper">
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/oneiholguin" target="_blank"><img
+                                src="{{ asset('static/image/icon_twitter.png') }}" alt="icon_twitter"> @ONEIHolguin</a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="https://youtube.com/channel/UCpEI20Fh-VKqjgR3BM-UmYA" target="_blank"><img
+                                src="{{ asset('static/image/icon_youtube.png') }}" alt="icon_youtube"> ONEINacional</a>
+                </li>
+            </ul>
+
+        </section>
     </div>
+</div>
 
-    <main>
-        {% block body %}{% endblock %}
-    </main>
+{{ include('menu.html.twig') }}
+{# Navbar END #}
 
-    <script src="{{ asset('static/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('static/js/customs.js') }}" type="text/javascript"></script>
-    {% block javascripts %}{% endblock %}
-  </body>
+<div class="zipper">
+    <img src="{{ asset('static/image/zipper90.png') }}" alt="zipper">
+</div>
+
+<main>
+    {% block body %}{% endblock %}
+</main>
+
+<script src="{{ asset('static/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('static/js/customs.js') }}" type="text/javascript"></script>
+{% block javascripts %}{% endblock %}
+</body>
 </html>

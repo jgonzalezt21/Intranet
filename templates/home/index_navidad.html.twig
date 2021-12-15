@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('static/css/gsap.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <section class="sec1">
+                <img class="gsap-bg" src="{{ asset('static/image/gsap/bg.jpg') }}" id="bg" alt="bg">
+                <img class="gsap-santa" src="{{ asset('static/image/gsap/santa.png') }}" id="santa" alt="santa">
+                <img class="gsap-munn" src="{{ asset('static/image/gsap/munn.png') }}" id="munn" alt="munn">
+            </section>
+        </div>
+
+        <div class="sec2">
+            <div class="content">
+                <h4>En la ONEI Holguín</h4>
+                <p>
+                    Un Año Nuevo no trae solo felicidad, también nos da la esperanza de cumplir nuestros sueños y un
+                    nuevo comienzo en nuestra vida. Un nuevo año es muy especial para todos.
+                </p>
+                <p class="mt-4">
+                    Es por eso que te deseamos 12 meses de placer, 52 semanas de emoción, 365 días de risa, 8760 horas
+                    de buena suerte, 525600 minutos de alegría y 31536000 segundos de éxito.
+                </p>
+                <h3>¡Feliz Año Nuevo!</h3>
+
+                <div class="mt-5">
+                    <a class="btn btn-outline-primary" href="{{ path('links') }}">
+                        <i class="bi bi-link-45deg"></i>Links <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('static/vendor/gsap/js/gsap.min.js') }}"></script>
+    <script src="{{ asset('static/vendor/gsap/js/ScrollTrigger.min.js') }}"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to("#santa", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: 2000,
+            y: -700,
+        });
+
+        gsap.from("#munn", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: 1500,
+        });
+        //
+        // gsap.from("#castle", {
+        //     scrollTrigger: {
+        //         scrub: 0.5,
+        //     },
+        //     x: -100,
+        // });
+        //
+        // gsap.to("#bats", {
+        //     scrollTrigger: {
+        //         scrub: 0.5,
+        //     },
+        //     scale: 1.5,
+        // });
+    </script>
+{% endblock %}

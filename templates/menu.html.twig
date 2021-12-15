@@ -1,56 +1,62 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-onei">
     <div class="container">
-      <a class="navbar-brand" href="{{ path('home') }}"><i class="bi bi-house-fill"></i> Intranet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('links') }}">
-                    <i class="bi bi-link-45deg"></i> Links
-                </a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFTP" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-files"></i> FTP
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownFTP">
-                <li><a class="dropdown-item" href="https://ftp.onei.gob.cu" target="_blank">Nacional</a></li>
+        <a class="navbar-brand" href="{{ path('home') }}"><i class="bi bi-house-fill"></i> Intranet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                <li><a class="dropdown-item" href="https://ftp.hg.onei.cu/" target="_blank">Provincial</a></li>
-              </ul>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('links') }}">
+                        <i class="bi bi-link-45deg"></i> Links
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="https://correo.onei.gob.cu/" target="_blank">
-                    <i class="bi bi-envelope-fill"></i> Correo
-                </a>
-            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFTP" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-files"></i> FTP
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownFTP">
+                        <li><a class="dropdown-item" href="https://ftp.onei.gob.cu" target="_blank">Nacional</a></li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('directorio') }}">
-                    <i class="bi bi-telephone"></i> Directorio
-                </a>
-            </li>
+                        <li><a class="dropdown-item" href="https://ftp.hg.onei.cu/" target="_blank">Provincial</a></li>
+                    </ul>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSIGE3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="logo_sige" src="{{ asset('static/image/logo_sige.png') }}"> SIGE 3
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSIGE3">
-                  <li><a class="dropdown-item" href="https://sige.onei.gob.cu/" target="_blank">Nacional</a></li>
-  
-                  <li><a class="dropdown-item" href="https://sige.hg.onei.cu:9002/" target="_blank">Provincial</a></li>
-                </ul>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://correo.onei.gob.cu/" target="_blank">
+                        <i class="bi bi-envelope-fill"></i> Correo
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="http://sipe.onei.gob.cu" target="_blank"">SIPE</a>
-            </li>
-        </ul>
-      </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('directorio') }}">
+                        <i class="bi bi-telephone"></i> Directorio
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSIGE3" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="logo_sige" src="{{ asset('static/image/logo_sige.png') }}" alt="logo sige"> SIGE 3
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSIGE3">
+                        <li><a class="dropdown-item" href="https://sige.onei.gob.cu/" target="_blank">Nacional</a></li>
+
+                        <li><a class="dropdown-item" href="https://sige.hg.onei.cu:9002/" target="_blank">Provincial</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://aux.hg.onei.cu/" target="_blank">HlgTools</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://sipe.onei.gob.cu" target="_blank">SIPE</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
