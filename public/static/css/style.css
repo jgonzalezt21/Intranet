@@ -1,0 +1,111 @@
+@import url('fonts.css');
+
+/* VARIABLE DEFINITIONS */
+
+:root {
+    --color-primary-blue: #004d9d;
+    --color-secondary-blue: #007bff;
+    --color-bg: 33, 37, 41;
+}
+
+.bg-onei {
+    background-color: var(--color-primary-blue);
+}
+
+body {
+    background-color: rgba(var(--color-bg), 1) !important;
+    color: #fff;
+}
+
+h3,
+h4 {
+    font-family: Futura, serif, Verdana;
+    font-weight: 700;
+}
+
+.img_logo {
+    height: 4.5em;
+}
+
+.logo_sige {
+    width: 1.1em;
+}
+
+ul.logos li {
+    padding: .7rem 0 0 1rem;
+}
+
+ul.logos a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Futura, serif, Verdana;
+    font-weight: 700;
+    transition: color .2s ease-in-out;
+}
+
+ul.logos a:hover {
+    color: var(--color-primary-blue);
+}
+
+ul.links a {
+    display: inline-block;
+    font-family: Futura, serif, Verdana;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: var(--color-secondary-blue);
+    border-color: var(--color-primary-blue);
+}
+
+ul.links a:hover {
+    color: #fff;
+    background-color: var(--color-primary-blue);
+    border-color: var(--color-primary-blue);
+}
+
+.btn-check:focus+.ul.links a,
+.ul.links a:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+}
+
+.zipper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3.6em;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.zipper img {
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    padding-left: 2em;
+}
+
+table th {
+    font-family: MyriadPro, serif, Verdana;
+    font-weight: 700;
+}
+
+table td {
+    font-family: MyriadPro, serif, Verdana;
+    font-weight: 400;
+}
